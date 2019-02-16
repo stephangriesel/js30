@@ -18,7 +18,7 @@
 
   <style>
     html {
-      background: #018DED url(http://unsplash.it/1500/1000?image=881&blur=50);
+      background-image: url("bg.jpg");
       background-size: cover;
       font-family: 'helvetica neue';
       text-align: center;
@@ -35,6 +35,7 @@
     }
 
     .clock {
+      background: rgb(77, 77, 77, 0.6);
       width: 30rem;
       height: 30rem;
       border: 20px solid white;
@@ -50,6 +51,7 @@
     }
 
     .clock-face {
+      
       position: relative;
       width: 100%;
       height: 100%;
@@ -57,9 +59,11 @@
     }
 
     .hand {
+      
+      border-radius:50px;
       width: 50%;
       height: 6px;
-      background: black;
+      background: rgb(202, 202, 202);
       position: absolute;
       top: 50%;
       transform-origin: 100%; /* rotation starts here */
