@@ -62,6 +62,10 @@
       background: black;
       position: absolute;
       top: 50%;
+      transform-origin: 100%; /* rotation starts here */
+      transform:rotate(90deg); /* div default pos, left to right thus hand will "lie" down*/
+      transition: all 0.05s; /* add transition effect, combined with timing function below */
+      transition-timing-function: cubic-bezier(0.5, 2.96, 0.58, 1); /* add transition effect, copy this from developer tools */
     }
 
   </style>
